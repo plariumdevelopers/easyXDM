@@ -325,8 +325,9 @@ function resolveUrl(url){
     }
     // #endif
     
-    // replace all // except the one in proto with /
-    url = url.replace(reDoubleSlash, "$1/");
+    // replace all // except the one in proto with /    
+    // url = url.replace(reDoubleSlash, "$1/");
+
     
     // If the url is a valid url we do nothing
     if (!url.match(/^(http||https):\/\//)) {
